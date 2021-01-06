@@ -1,5 +1,14 @@
-<app-header></app-header>
-<div class="container">
-  <button class="btn btn-primary">Hello</button>
-  
-</div>
+<ng-container>
+  <app-header></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <img src="../assets/todo.png" alt="" class="img-fluid" />
+      </div>
+      <div class="col-lg-5 mt-5">
+        <app-todo-form></app-todo-form>
+        <app-todos></app-todos>
+      </div>
+    </div>
+  </div>
+</ng-container>
