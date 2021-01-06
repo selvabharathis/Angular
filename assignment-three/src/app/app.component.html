@@ -1,0 +1,13 @@
+<div>
+  <h1>parent Component</h1>
+  <h2>Select a Category</h2>
+  <select (change)="setMov(va.value)" #va>
+    <option selected hidden>Select an Option</option>
+    <option value="action">action</option>
+    <option value="romance">romance</option>
+    <option value="mystery">mystery</option>
+  </select>
+</div>
+<div>
+  <app-child [choise]="mov"></app-child>
+</div>

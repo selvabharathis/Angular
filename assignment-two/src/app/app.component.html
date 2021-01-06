@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <tr *ngFor="let product of productListFromService; index as i">
+      <td><button (click)="deleteProduct(i)">Delete</button></td>
+      <td>{{ product.productCode }}</td>
+      <td>{{ product.productName }}</td>
+      <td>{{ product.productCost }}</td>
+      <td (click)="checkDiscount()">
+        <input
+          type="number"
+          (change)="setProdQuant(count.value, i)"
+          #count
+          value="{{ product.productQuantity }}"
+        />
+      </td>
+    </tr>
+  </table>
+  <p>The total price is {{ totalPrice }}</p>
+  <p *ngIf="eligible" style="color: green">You are eligible for discount!</p>
+</div>

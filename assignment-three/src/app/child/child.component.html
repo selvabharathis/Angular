@@ -1,0 +1,20 @@
+<h1>child Component</h1>
+<h2>Books</h2>
+<select *ngIf="choise == 'action'">
+  <option selected>NONE</option>
+  <option value="action">a</option>
+  <option value="romance">b</option>
+  <option value="mystery">c</option>
+</select>
+<select *ngIf="choise == 'romance'">
+  <option selected>NONE</option>
+  <option value="action">x</option>
+  <option value="romance">y</option>
+  <option value="mystery">z</option>
+</select>
+<select *ngIf="choise == 'mystery'">
+  <option selected>NONE</option>
+  <option value="action">m</option>
+  <option value="romance">n</option>
+  <option value="mystery">o</option>
+</select>
